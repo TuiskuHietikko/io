@@ -28,6 +28,9 @@ public class ChannelDemo1 {
      *  ServerSocketChannel
      *  DataGramChannel
      *
+     *  对于FileChannel  如果文件是以只读的方式打开,则只能读 以只写的方式打开,则只能写.
+     *  虽然FIleChannel 实现了读和写的两个接口,但是在使用之前还是得判断一下
+     *
      */
 
     public static void main(String[] args) throws IOException {
@@ -50,8 +53,6 @@ public class ChannelDemo1 {
 
         //创建方式1
         DatagramChannel datagramChannel=DatagramChannel.open();
-
-        //创建方式1
 
 
     }
